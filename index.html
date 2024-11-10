@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Study Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Study Timer</h1>
+
+        <!-- Timer Display -->
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+
+        <!-- Customization -->
+        <div class="customization">
+            <label>Pomodoro (minutes):</label>
+            <input type="number" id="pomodoro-duration" value="25">
+            <label>Break (minutes):</label>
+            <input type="number" id="break-duration" value="5">
+        </div>
+
+        <!-- Session Tracking -->
+        <div class="session-tracking">
+            <p>Completed Pomodoros: <span id="session-count">0</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
